@@ -1,0 +1,154 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Shop */
+
+.post-type-archive-product, .tax-product-type, .post-type-archive-adventure, .home, .archive.tax-product-type{
+    .page-header {
+        border-bottom: 1px dashed #c8c8c8;
+        margin-bottom: 3rem;
+        text-align: center;
+        h1, h2{
+            text-transform: uppercase;
+        }
+    }
+
+    .product-type-list {
+        display: -ms-flexbox;
+        display: flex;
+        font-family: Novecento Sans Web,sans-serif;
+        font-size: 19.2px;
+        font-size: 1.2rem;
+        -ms-flex-pack: center;
+        justify-content: center;
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+        text-transform: uppercase;
+        a{
+            color: #248a83;
+            text-decoration: none;
+        }
+
+        li {
+            margin: 0 1.5rem;
+        }
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        .product-grid-item {
+            border: 1px solid #e1e1e1;
+
+            .thumbnail-wrapper {
+                background-color: #e1e1e1;
+                height: 250px;
+                overflow: hidden;
+                position: relative;
+
+                display: flex;
+
+                .wp-post-image {
+                    left: 50%;
+                    max-height: 250px;
+                    max-width: none;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%,-52%);
+                    width: auto;
+                }
+            }
+            .product-info {
+                font-size: 14.4px;
+                font-size: .9rem;
+                padding: .75rem 1rem;
+                background: #fff;
+
+                position: relative;
+                width: 100%;
+                height: 3.7em;
+                align-self: flex-end;
+
+                .entry-title {
+                    background: #fff;
+                    
+                    display: inline;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    font-family: Merriweather Web,serif;
+                    letter-spacing: 0;
+                    line-height: 1.75;
+                    padding-right: .25rem;
+                    text-transform: none;
+                    
+                    a{
+                        text-decoration: none;
+                        color: #2f1339;
+                    }
+                    &:before{
+                        float: left;
+                        width: 0;
+                        white-space: nowrap;
+                        content: "...................................................";
+                    }
+                }
+                .price {
+                    float: right;
+                    padding-left: .25rem;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* Single Product */
+
+.single-product.product-template-default.single.single-product, .single-adventure{
+
+    .site-content{
+        .content-area{
+            .site-main{
+                display: flex;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                
+                .product-content-wrapper, 
+                .product-image-wrapper {
+                    width: 48%;
+
+                    .entry-title {
+                        color: #d99054;
+                        margin-top: 0;
+                        margin-bottom: .5rem;
+                    } 
+                    .entry-content{
+                        margin-top: 0;
+                        .price {
+                            font-family: Novecento Sans Web,sans-serif;
+                            font-size: 22.8px;
+                            // font-size: 1.8rem;
+                            margin-top: 0;
+                            text-transform: uppercase;
+                        }   
+                        .social-buttons i {
+                            margin-right: 10px;
+                        }   
+                    }   
+                }  
+            }
+        }
+    }
+}
+
+
+
+body:not(.home):not(.page-template-page-template-about):not(.single-adventure):not(.archive) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}

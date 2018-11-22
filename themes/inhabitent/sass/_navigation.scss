@@ -1,0 +1,286 @@
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/* Links */
+
+// a {
+// 	color: $color__link;
+
+// 	&:visited {
+// 		color: $color__link-visited;
+// 	}
+// 	&:hover,
+// 	&:focus,
+// 	&:active {
+// 		color: $color__link-hover;
+// 	}
+// 	&:focus {
+// 		outline: thin dotted;
+// 	}
+// 	&:hover,
+// 	&:active {
+// 		outline: 0;
+// 	}
+// }
+
+/* Menus */
+
+
+///menu reverse => green/white
+header.site-header, .home.page-template-default.reverse .site-header, .page-template-page-template-about.page.reverse .site-header, .single-adventure.single.reverse .site-header {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #e1e1e1;
+	background-color: rgba(255,255,255,.4);
+	background-color:hsla(0,0%,100%,.85);
+	z-index: 3;
+	transition: top .5s linear;
+
+	.content {
+		margin-left: auto;
+		margin-right: auto;
+		width: 1120px;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		
+		.site-branding {
+			width: 60px;
+			height: 40px;
+			z-index: 2;
+			position: absolute;
+			top: .1em;
+			background-size: 46px 40px;
+			background-image: url(http://localhost:8888/project-04/wp-content/themes/Inhabitent/images/logos/inhabitent-logo-tent.svg);
+			background-repeat: no-repeat;
+		
+			a h1 {
+				font-size: 0px;
+				width: 60px;
+				height: 50px;
+			}
+		}
+		.main-navigation {
+			font-family: $font__heading;
+			clear: both;
+			display: inline-block;
+			width: auto;
+			position: absolute;
+			right: 0;
+			margin: .7em 0;
+
+			ul.menu {
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+				li{
+					padding-left: $base__space-unit;
+					a{
+						font-size: 1rem;
+						text-transform: uppercase;
+						color: $color__text-brand;
+						text-shadow: none;
+					}
+					.search-form i{
+						color: $color__text-brand;
+						text-shadow:none;
+					}
+					input.search-field{
+						text-transform: uppercase;
+						&::-webkit-input-placeholder{
+							color: #666666;
+						}
+					}
+				}
+				li:hover > ul,
+				li.focus > ul {
+					left: auto;
+				}
+			}
+			li {
+				display: inline-block;
+				position: relative;
+			}
+			a {
+				display: block;
+				text-decoration: none;
+			}
+		}
+	}
+}
+///menu white
+.home.page-template-default, .page-template-page-template-about.page, .single-adventure.single {
+	header.site-header{
+		position: absolute;
+		border-bottom: none;
+		background: none;
+	
+		.site-branding{
+			width: 60px;
+			height: 40px;
+			z-index: 2;
+			position: absolute;
+			top: .1em;
+			background-size: 48px 40px;
+			background-image: url(http://localhost:8888/project-04/wp-content/themes/Inhabitent/images/logos/inhabitent-logo-tent-white.svg);
+			background-repeat: no-repeat;
+		}
+		.main-navigation ul.menu li {
+			a{
+			color: $color__text-white;
+			text-shadow: 1px 1px 2px #323232;
+			}
+			// input.search-field{
+			// 	color: #fff;
+			// 	text-transform: uppercase;
+			// }
+		}
+		
+	}
+}
+///pre-menu white
+.home.page-template-default .site-header, .page-template-page-template-about.page .site-header, .single-adventure.single .site-header{
+	.main-navigation ul.menu li {
+		.search-form i{
+			color: #fff;
+			text-shadow: 1px 1px 2px #323232;
+		}
+		.search-field{
+			text-transform: uppercase;
+			&::-webkit-input-placeholder{
+				color: #fff;
+			}
+		}
+	}
+}
+
+//////Footer//////
+body footer.site-footer {
+	background: url(../../images/dark-wood@2x.png);
+	background-size: 512px 512px;
+	margin-top: 4em;
+	color: $color__text-white;
+	
+
+	.site-info {
+		padding: 1.5rem 0;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $font__heading;
+	}
+ 
+	.content{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.widget-container, .footer-block-item {
+			margin: 3rem 0;
+			padding-right: 1.5rem;
+			width: 25%;		
+
+			h3 {
+				color: #d99054;
+				font-size: 19.2px;
+				font-size: 1.2rem;
+				margin-bottom: .75rem;
+				text-transform: uppercase;
+			}
+			p {
+				margin-bottom: .5em;
+				margin-top: .5em;
+				font-family: $font__main;
+				
+				i {
+					font-size: 20px;
+					font-size: 1.25rem;
+					margin-right: .5rem;
+				}
+			}
+			span {
+				font-weight: bold;
+			}
+			.contact{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+
+				& p:first-child{
+					flex-basis: 100%;
+					order: 2;
+				}
+				& p:nth-child(2){
+					flex-basis: 100%;
+					order: 1;
+				}
+				& p:nth-child(3){
+					flex-basis: 100%;
+					order: 3;
+				}
+				
+				p.contact-meta a {
+				color: #fff;
+				text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+				p.social-footer span a {
+				color: #fff;
+					&:hover{
+						color: #d99054;
+					}
+				}
+			}
+			
+			.footer-logo{
+				background: url(../../images/logos/inhabitent-logo-text.svg) no-repeat;
+				background-size: 16em;
+				width: 100%;
+				height: 3.6em;
+			}
+		}
+	}
+}
+
+
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 $base__space-unit;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

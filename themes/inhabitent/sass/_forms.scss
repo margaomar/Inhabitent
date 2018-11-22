@@ -1,0 +1,136 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+button, .black-btn, .btn, .white-btn,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+
+	background: $color__background-brand;
+	border: none;
+	border-radius: 0;
+	color: $color__text-white;
+	cursor: pointer;
+	font-family: $font__heading;
+	font-size: .9em;
+	line-height: 1;
+	padding: .75em 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+
+.black-btn:active, .black-btn:focus, .black-btn:hover, .btn:active, .btn:focus, .btn:hover, .white-btn:active, .white-btn:focus, .white-btn:hover, button:active, button:focus, button:hover, input[type=button]:active, input[type=button]:focus, input[type=button]:hover, input[type=reset]:active, input[type=reset]:focus, input[type=reset]:hover, input[type=submit]:active, input[type=submit]:focus, input[type=submit]:hover {
+    background: #19625d;
+    color: #fff;
+}
+
+.black-btn {
+    border: 1px solid #000;
+	color: #000;
+	&:active, &:focus, &:hover{
+		background-color: #248a83;
+		border: 1px solid #248a83;
+		color: #fff;
+	}
+}
+.white-btn{
+	border: 1px solid #fff;
+    color: #fff;
+	&:active, &:focus, &:hover{
+		background-color: #248a83;
+		border: 1px solid #248a83;
+		color: #fff;
+	}
+}
+
+.black-btn, .white-btn {
+    background-color: transparent;
+}
+
+// .black-btn:active, .black-btn:focus, .black-btn:hover, .white-btn:active, .white-btn:focus, .white-btn:hover {
+
+
+/* Fields */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+
+	&:focus {
+		color: #111;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+label {
+    color: #2f1339;
+    display: block;
+    font-family: Novovento;
+    font-size: 17.6px;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+.required {
+    color: #d99054;
+}
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+}
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url] {
+    padding: .3rem;
+}
+input[type=email]:focus, input[type=password]:focus, input[type=search]:focus, input[type=text]:focus, input[type=url]:focus, textarea:focus {
+    color: #111;
+}
+
+///search button
+header.site-header{
+	.main-navigation ul.menu li{
+		input.search-field {
+			padding-left: 8px;
+			width: 175px;
+			border: 0;
+			outline: none;
+			font-size: .8em;
+			height: 18px;
+			color: #fff;
+			font-family: Novovento;
+			background:none;
+			border: 0;
+			display: none;
+		}
+		.icon-search{
+			width: 20px;
+			height: 20px;
+			color: #fff;
+			display: inline-block;
+			cursor: pointer;
+		}
+	}
+}

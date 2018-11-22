@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+	margin: 0 0 $base__space-unit;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+// Custom widget
+
+// .blog, .single, .page-id-41{ 
+
+.widget {	
+	margin: 0 0 3rem;
+}
+	
+	.widget-area {
+		padding-left: 5%;
+		width: 27%;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		p.contact-meta{
+			a{
+				text-decoration: none;
+				color: $color__link;
+			}
+			i{
+				line-height: 1.8;
+				margin-right: .5rem;
+				width: 20px;
+				.fa-phone:before {
+					content: "\f095";
+				}
+				.fa-envelope:before {
+					content: "\f0e0";
+				}
+				.fa-map-marker:before {
+					content: "\f041";
+				}
+			}
+		}
+		p{
+			span{
+				font-weight: bold;
+			}
+		}
+		ul{
+			list-style: none;
+			padding-left: 0;
+			li a{
+				text-decoration: none;
+				color: $color__text-brand;
+			}
+		}
+	}
+// }

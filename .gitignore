@@ -1,0 +1,50 @@
+# Ignore OS files #
+# =============== #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+
+# Ignore packages #
+# =============== #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Ignore packages #
+# =============== #
+node_modules/
+
+# Ignore everything in "wp-content" except these directories. #
+# =============== #
+/*
+!.gitignore
+!plugins/
+!themes/
+!uploads/
+!README.md
+
+# Ignore everything in "plugins" except certain plugins. #
+# =============== #
+plugins/*
+!plugins/inhabitent-functionality/
+!plugins/business-hours-widget/
+!plugins/inhabitent-business-contact-widget/
+
+# Ignore everything in "themes" except the active theme. #
+# =============== #
+themes/*
+!themes/inhabitent/
+
+# Ignore packages #
+# =============== #
+themes/inhabitent/node_modules/

@@ -1,0 +1,242 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.content{
+	@include center-main-block;
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 4.5rem 0 0 0;
+	&:first-of-type{
+		margin-top: 0;
+	}
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+/* container */
+.content, .container, .single-product .site-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+
+/* post area layout */
+.site-content {
+    padding-top: 50px;
+}
+
+/* contsingle layoutainer */
+body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.archive.post-type-archive.post-type-archive-product) .content-area{
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    width: 73%;
+}
+body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.archive.post-type-archive.post-type-archive-product) .widget-area{
+    padding-left: 5%;
+    width: 27%;
+}
+.archive:not(.post-type-archive):not(.tax-product-type) .page-header, .search .page-header {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.archive.post-type-archive.post-type-archive-product) .site-content {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+.post-type-archive-product .content-area{
+	border-right: 0px;
+}
+
+
+
+
+
+/* Find Us and single layout for error404, search, tag*/ 
+.page-template-default.page:not(.page-template-page-template-about):not(.home), .error404, .search, .tag{
+	.site-content {
+	// padding-top: 100px;
+	display: flex;
+	@include center-main-block;
+		.content-area {
+			border-right: $border-solid;
+			padding-right: 5%;
+			width: 73%;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
+	}
+}
+
+/* montly */
+.archive.date .widget-area{
+    padding-left: 5%;
+    width: 27%;
+}
+.archive.date .content-area{
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    width: 73%;
+}
+/* .archive.date => archive months */
+.blog, .archive.date, .post, .single-post{
+		
+	.site-content {
+	display: flex;
+	@include center-main-block;
+
+		.content-area {
+			border-right: $border-solid;
+			padding-right: 5%;
+			width: 73%;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+
+		 	.entry-header{
+				position: relative;
+				text-transform: uppercase;
+				
+				h1, h2{
+					position: absolute;
+					background-color: $color__background-brand;
+					font-size: 2rem;
+					left: 0;
+					padding: .75rem 1.5rem;
+					margin-top: 2.25rem;
+					max-width: 75%;
+					top: 0;
+					color: $color__text-white;
+				
+					a{
+						color: $color__text-white;
+						text-decoration: none;
+					}
+				}
+				.entry-meta {
+					font-family: $font__heading;
+					background-color: $color__background-brand;
+					bottom: 8px;
+					color: $color__text-white;
+					padding: .5em 1.5em;
+					position: absolute;
+					right: 0;
+					a{
+						color: $color__text-white;
+					}
+				}
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.single .site-main{
+	article{
+
+		footer.entry-footer {
+			.cat-links{
+				text-transform: uppercase;
+				margin-right: 1.5rem;
+			}
+			span{
+				text-transform: uppercase;
+				margin-right: 1.5rem;
+				font-family: $font__heading;
+				a{
+					text-decoration: none;
+					&:hover{
+						color: $color__text-main;
+					}
+				}
+			}
+		}
+	}
+	.post-navigation{
+		display: none;
+	}
+}
+
+
+/* Asides */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Comments */
+.comments-area{
+	.comments-title{
+		font-size: 2.1em;
+	}
+	.comment-author-avatar img{
+		border-radius: 30px;
+	}
+	.comment-content a {
+		word-wrap: break-word;
+	}
+	.comment-reply-title{
+		font-size: 1.8em;
+	}
+	form{
+		.logged-in-as{
+			display: none;
+		}
+		label{
+			text-transform: uppercase;
+			font-family: $font__heading;
+		}	
+	}
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/* Contact us */
+.page {
+	.entry-header {
+		h1{
+			margin: 0;
+			text-transform: uppercase;
+			font-size: 2.4em;
+		}
+	}
+	.entry-content{
+		h2{
+			font-size: 2.1rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+

@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $font__heading;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+h1 {
+    font-size: 38.4px;
+    font-size: 2.4rem;
+    margin-bottom: .5rem;
+}
+h1, h2 {
+    line-height: 1.25;
+}
+/* Copy */
+
+p {
+	margin-bottom: $base__space-unit;
+}
+a {
+	color: #248a83;
+	text-decoration: none;
+	&:hover {
+		color: #2f1339;
+	}
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 $base__space-unit;
+}
+
+address {
+	margin: 0 0 $base__space-unit;
+}
+
+
+big {
+	font-size: 125%;
+}
