@@ -96,6 +96,15 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 		}
 	}
 }
+//remove search icon from 
+
+.error404, .search, .tag{
+	.page-content{
+		.icon-search{
+			display: none;
+		}
+	}
+}
 
 /* montly */
 .archive.date .widget-area{
@@ -178,6 +187,12 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 					&:hover{
 						color: $color__text-main;
 					}
+				}
+			}
+			.social-buttons{
+				margin-top: 1.5rem;
+				i{
+					margin-right: 10px;
 				}
 			}
 		}

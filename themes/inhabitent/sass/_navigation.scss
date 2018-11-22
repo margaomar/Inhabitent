@@ -112,6 +112,21 @@ header.site-header, .home.page-template-default.reverse .site-header, .page-temp
 		}
 	}
 }
+//text input for search placeholder
+.error404 header.site-header, .search header.site-header, .tag header.site-header{
+	.menu-main-container{
+		ul{
+			li.search-menu{
+				input.search-field{
+					text-transform: uppercase;
+					&::-webkit-input-placeholder{
+						color: #666666;
+					}
+				}
+			}
+		}
+	}
+}
 ///menu white
 .home.page-template-default, .page-template-page-template-about.page, .single-adventure.single {
 	header.site-header{

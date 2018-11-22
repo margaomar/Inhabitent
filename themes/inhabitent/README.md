@@ -1,21 +1,54 @@
-# RED Starter
+# Project: Inhabitent Wordpress Site.
+## About this project
+You can see this project on-line, going to [Inhabitent Wordpress Site](http://margaomar.com/Inhabitent/index.html)
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+----
+## Goals of the site
+This site has been created to learn how to create a customized wordpress page, build plugings to add custom features to the products store and creating custom widgets. 
 
-## Installation
+ Wordpress Technology, PHP, HTML5, CSS3 and JQUERY. 
 
-### 1. Download me (don't clone me!)
+> Hand-Crafter Styles
+Inhabitent Wordpress Site has five different sections: home, shop, blob, adventures, about and contact. Each of them have a different style and archive file. Inhabitent is proud to offer their visitor a different view of live.
 
-Then add me to your `wp-content` directory.
+----
+## Technology used
+Wordpress | PHP | WP Plugings | HTML5 | CSS3 | Gulp | Sass (CSS Preprocessors) | JQuery | Git | Github | FontFace | 
 
-### 2. Rename the `redstarter-master` directory
 
-Make sure that the theme directory name is project appropriate!
+----
+## Personal Learnings
 
-### 3. Install the dev dependencies
+1. PHP
+2. Wordpress 
+3. WP Plugings
+4. WP Widgets 
+5. JQuery
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
 
-### 4. Update the proxy in `gulpfile.js`
+----
+## Link to the files on Github
+* **[Inhabitent Wordpress Site on Github](https://github.com/margaomar/InstanewsApp)**
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+----
+## Media Query Mobile First Break Points 
+
+* 1200px
+
+----
+## Device Screenshots
+
+**Desktop Device**
+----
+<img src="screenshoots/desktop-closed-1200px.png" width="1200px" />
+<img src="screenshoots/desktop-open-1200px.png" width="1200px" />
+
+
+----
+## Dead Line for the project
+* 22-Nov-2018
+
+----
+## Project developed by 
+ **[Marga Omar]
+(https://margaomar.com)**

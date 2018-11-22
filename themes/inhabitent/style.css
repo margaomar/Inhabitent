@@ -492,7 +492,6 @@ header.site-header .main-navigation ul.menu li input.search-field {
   outline: none;
   font-size: .8em;
   height: 18px;
-  color: #fff;
   font-family: Novovento;
   background: none;
   border: 0;
@@ -585,6 +584,11 @@ header.site-header, .home.page-template-default.reverse .site-header, .page-temp
       header.site-header .content .main-navigation a, .home.page-template-default.reverse .site-header .content .main-navigation a, .page-template-page-template-about.page.reverse .site-header .content .main-navigation a, .single-adventure.single.reverse .site-header .content .main-navigation a {
         display: block;
         text-decoration: none; }
+
+.error404 header.site-header .menu-main-container ul li.search-menu input.search-field, .search header.site-header .menu-main-container ul li.search-menu input.search-field, .tag header.site-header .menu-main-container ul li.search-menu input.search-field {
+  text-transform: uppercase; }
+  .error404 header.site-header .menu-main-container ul li.search-menu input.search-field::-webkit-input-placeholder, .search header.site-header .menu-main-container ul li.search-menu input.search-field::-webkit-input-placeholder, .tag header.site-header .menu-main-container ul li.search-menu input.search-field::-webkit-input-placeholder {
+    color: #666666; }
 
 .home.page-template-default header.site-header, .page-template-page-template-about.page header.site-header, .single-adventure.single header.site-header {
   position: absolute;
@@ -908,6 +912,9 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
     padding-top: 3rem;
     padding-bottom: 3rem; }
 
+.error404 .page-content .icon-search, .search .page-content .icon-search, .tag .page-content .icon-search {
+  display: none; }
+
 /* montly */
 .archive.date .widget-area {
   padding-left: 5%;
@@ -973,6 +980,11 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
     text-decoration: none; }
     .single .site-main article footer.entry-footer span a:hover {
       color: #404040; }
+
+.single .site-main article footer.entry-footer .social-buttons {
+  margin-top: 1.5rem; }
+  .single .site-main article footer.entry-footer .social-buttons i {
+    margin-right: 10px; }
 
 .single .site-main .post-navigation {
   display: none; }
