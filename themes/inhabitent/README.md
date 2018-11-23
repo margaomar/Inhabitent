@@ -4,34 +4,35 @@ You can see this project on-line, going to [Inhabitent Wordpress Site](http://ma
 
 ----
 ## Goals of the site
-This site has been created to learn how to create a customized wordpress page, build plugings to add custom features to the products store and creating custom widgets. 
+This site has been created to learn how to create a customized wordpress theme, building custom plugings to be able to add custom fields to the products in the store, and creating custom widgets which the client will be able to change the opening hours, contact details or social links. 
 
- Wordpress Technology, PHP, HTML5, CSS3 and JQUERY. 
+Wordpress Technology, PHP, JQUERY, HTML5 and CSS3. 
 
 > Hand-Crafter Styles
-Inhabitent Wordpress Site has five different sections: home, shop, blob, adventures, about and contact. Each of them have a different style and archive file. Inhabitent is proud to offer their visitor a different view of live.
+Inhabitent Wordpress Site has five different sections: home, shop, blob, adventures, about and contact. Each of them have a different style and archive files. Inhabitent is proud to offer their visitor a different experience on each page of his site.
 
 ----
 ## Technology used
-Wordpress | PHP | WP Plugings | HTML5 | CSS3 | Gulp | Sass (CSS Preprocessors) | JQuery | Git | Github | FontFace | 
+Wordpress | PHP | WP Plugings | JQuery | HTML5 | CSS3 | Gulp | Sass (CSS Preprocessors) | Git | Github | FontFace | 
 
 
 ----
 ## Personal Learnings
 
 1. PHP
-2. Wordpress 
-3. WP Plugings
-4. WP Widgets 
-5. JQuery
+2. Wordpress technology: 
+3. Functions, Hooks, Debugging, Post Types, Taxonomies and Fields
+4. WP Custom Widgets 
+5. WP Custom Plugings
+6. JQuery
 
 
 ----
 ## Link to the files on Github
-* **[Inhabitent Wordpress Site on Github](https://github.com/margaomar/InstanewsApp)**
+* **[Inhabitent Wordpress Site on Github](https://github.com/margaomar/Inhabitent)**
 
 ----
-## Media Query Mobile First Break Points 
+## Media Query Break Point 
 
 * 1200px
 
@@ -50,5 +51,4 @@ Wordpress | PHP | WP Plugings | HTML5 | CSS3 | Gulp | Sass (CSS Preprocessors) |
 
 ----
 ## Project developed by 
- **[Marga Omar]
-(https://margaomar.com)**
+ **[Marga Omar](https://margaomar.com)**

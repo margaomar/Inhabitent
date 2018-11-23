@@ -51,7 +51,7 @@
     padding-top: 50px;
 }
 
-/* contsingle layoutainer */
+/* single layout */
 body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.archive.post-type-archive.post-type-archive-product) .content-area{
     border-right: 1px solid #e1e1e1;
     padding-right: 5%;
@@ -67,7 +67,6 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
     padding-bottom: 1rem;
 }
 body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.archive.post-type-archive.post-type-archive-product) .site-content {
-    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -77,14 +76,9 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 	border-right: 0px;
 }
 
-
-
-
-
-/* Find Us and single layout for error404, search, tag*/ 
+/* Find Us and single layout for error404, search, tag*/ /* Add here pages to apply the page or post layout*/
 .page-template-default.page:not(.page-template-page-template-about):not(.home), .error404, .search, .tag{
 	.site-content {
-	// padding-top: 100px;
 	display: flex;
 	@include center-main-block;
 		.content-area {
@@ -93,15 +87,6 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 			width: 73%;
 			padding-top: 3rem;
 			padding-bottom: 3rem;
-		}
-	}
-}
-//remove search icon from 
-
-.error404, .search, .tag{
-	.page-content{
-		.icon-search{
-			display: none;
 		}
 	}
 }
@@ -116,9 +101,12 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
     padding-right: 5%;
     width: 73%;
 }
+
 /* .archive.date => archive months */
+
+/* Blog and Posts - Journal*/
 .blog, .archive.date, .post, .single-post{
-		
+
 	.site-content {
 	display: flex;
 	@include center-main-block;
@@ -170,6 +158,7 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 	}
 }
 
+/* Post footer */
 .single .site-main{
 	article{
 
@@ -201,7 +190,6 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 		display: none;
 	}
 }
-
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -238,7 +226,7 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 	display: block;
 }
 
-/* Contact us */
+/* Contact us Page*/
 .page {
 	.entry-header {
 		h1{
@@ -255,3 +243,78 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 	}
 }
 
+
+/* About */
+.page-template-page-template-about{
+    header.entry-header.hero-image-header {
+        width: 100%;
+        height: 100vh;
+    }
+}
+.page-template-page-template-about {
+    header.site-header {
+        height: 0;
+    }
+    .site-content{
+        padding-top: 0px;
+    }
+    header.entry-header.hero-image-header {
+        // margin-bottom: 3em;
+        
+        img{
+            background-size: cover, cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    article{
+
+        @include center-main-block;
+
+        .entry-header{
+            position: absolute;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+            color: $color__text-white;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .entry-content{
+            h2{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+body:not(.home):not(.page-template-page-template-about):not(.single-adventure):not(.archive) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* error404 Page*/
+.error404{
+    ul{
+        padding-left: 0;
+        li{
+            list-style: none;
+            
+        }
+    }
+}
+
+/* remove search icon from page content in error, search and tag pages */
+.error404, .search, .tag{
+	.page-content{
+		.icon-search{
+			display: none;
+		}
+	}
+}

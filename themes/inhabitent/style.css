@@ -871,7 +871,7 @@ body footer.site-footer {
 .site-content {
   padding-top: 50px; }
 
-/* contsingle layoutainer */
+/* single layout */
 body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.archive.post-type-archive.post-type-archive-product) .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
@@ -887,8 +887,8 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
   padding-bottom: 1rem; }
 
 body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure):not(.archive.post-type-archive.post-type-archive-product) .site-content {
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -898,6 +898,7 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
   border-right: 0px; }
 
 /* Find Us and single layout for error404, search, tag*/
+/* Add here pages to apply the page or post layout*/
 .page-template-default.page:not(.page-template-page-template-about):not(.home) .site-content, .error404 .site-content, .search .site-content, .tag .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -912,9 +913,6 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
     padding-top: 3rem;
     padding-bottom: 3rem; }
 
-.error404 .page-content .icon-search, .search .page-content .icon-search, .tag .page-content .icon-search {
-  display: none; }
-
 /* montly */
 .archive.date .widget-area {
   padding-left: 5%;
@@ -926,6 +924,7 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
   width: 73%; }
 
 /* .archive.date => archive months */
+/* Blog and Posts - Journal*/
 .blog .site-content, .archive.date .site-content, .post .site-content, .single-post .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -968,6 +967,7 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
       .blog .site-content .content-area .entry-header img, .archive.date .site-content .content-area .entry-header img, .post .site-content .content-area .entry-header img, .single-post .site-content .content-area .entry-header img {
         width: 100%; }
 
+/* Post footer */
 .single .site-main article footer.entry-footer .cat-links {
   text-transform: uppercase;
   margin-right: 1.5rem; }
@@ -1017,7 +1017,7 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 .bypostauthor {
   display: block; }
 
-/* Contact us */
+/* Contact us Page*/
 .page .entry-header h1 {
   margin: 0;
   text-transform: uppercase;
@@ -1026,6 +1026,64 @@ body:not(.home):not(.page-template-page-template-about):not(.post-type-archive):
 .page .entry-content h2 {
   font-size: 2.1rem;
   margin-bottom: 1.5rem; }
+
+/* About */
+.page-template-page-template-about header.entry-header.hero-image-header {
+  width: 100%;
+  height: 100vh; }
+
+.page-template-page-template-about header.site-header {
+  height: 0; }
+
+.page-template-page-template-about .site-content {
+  padding-top: 0px; }
+
+.page-template-page-template-about header.entry-header.hero-image-header img {
+  background-size: cover, cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-template-page-template-about article {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .page-template-page-template-about article .entry-header {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); }
+  .page-template-page-template-about article .entry-content h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em; }
+
+body:not(.home):not(.page-template-page-template-about):not(.single-adventure):not(.archive) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+/* error404 Page*/
+.error404 ul {
+  padding-left: 0; }
+  .error404 ul li {
+    list-style: none; }
+
+/* remove search icon from page content in error, search and tag pages */
+.error404 .page-content .icon-search, .search .page-content .icon-search, .tag .page-content .icon-search {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1129,6 +1187,7 @@ body.home section {
     text-align: center;
     text-transform: uppercase; }
 
+/* section blog */
 .latest-entries ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1172,6 +1231,7 @@ body.home section {
         bottom: .75rem;
         left: .75rem; }
 
+/* links products */
 .home .product-type-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1194,6 +1254,7 @@ body.home section {
       height: 70px;
       width: 70px; }
 
+/* links blog */
 .home .latest-entries .thumbnail-wrapper img {
   left: 50%;
   max-height: 250px;
@@ -1214,6 +1275,7 @@ body.home section {
   bottom: .75rem;
   left: .75rem; }
 
+/* links adventures */
 .home .adventures ul {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr);
@@ -1300,58 +1362,6 @@ body.home section {
 
 .home .adventures .see-more a {
   background: #248a83; }
-
-.page-template-page-template-about header.entry-header.hero-image-header {
-  width: 100%;
-  height: 100vh; }
-
-.page-template-page-template-about header.site-header {
-  height: 0; }
-
-.page-template-page-template-about .site-content {
-  padding-top: 0px; }
-
-.page-template-page-template-about header.entry-header.hero-image-header img {
-  background-size: cover, cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.page-template-page-template-about article {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
-  .page-template-page-template-about article .entry-header {
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    color: #fff;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%); }
-  .page-template-page-template-about article .entry-content h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2em; }
-
-body:not(.home):not(.page-template-page-template-about):not(.single-adventure):not(.archive) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-
-.error404 ul {
-  padding-left: 0; }
-  .error404 ul li {
-    list-style: none; }
 
 /*--------------------------------------------------------------
 # Page Templates

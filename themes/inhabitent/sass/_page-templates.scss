@@ -42,8 +42,7 @@ body.home{
     }
 }
 
-    
-// section blog
+/* section blog */
 .latest-entries{
     ul {
         display: flex;
@@ -92,8 +91,7 @@ body.home{
     }
 }
 
-///links products
-
+/* links products */
 .home{
     //section product slugs links
     .product-type-blocks {
@@ -109,7 +107,6 @@ body.home{
             -ms-flex: 0 1 23.5%;
             flex: 0 1 23.5%;
             max-width: 23.5%;
-            // padding: .75rem;
             padding: .75rem .75rem 1.5rem .75rem;
             &:hover {
                 border-color: #d99054;
@@ -123,8 +120,7 @@ body.home{
     }
 }
 
-////links blog
-
+/* links blog */
 .home{
     .latest-entries{ 
         .thumbnail-wrapper img {
@@ -149,7 +145,7 @@ body.home{
     }
 }
 
-///links adventures
+/* links adventures */
 .home{
     .adventures{
         ul {
@@ -264,74 +260,6 @@ body.home{
             a{
                 background: #248a83;
             }
-        }
-    }
-}
-
-// About
-
-.page-template-page-template-about{
-    header.entry-header.hero-image-header {
-        width: 100%;
-        height: 100vh;
-    }
-}
-.page-template-page-template-about {
-    header.site-header {
-        height: 0;
-    }
-    .site-content{
-        padding-top: 0px;
-    }
-    header.entry-header.hero-image-header {
-        // margin-bottom: 3em;
-        
-        img{
-            background-size: cover, cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-    article{
-
-        @include center-main-block;
-
-        .entry-header{
-            position: absolute;
-            text-transform: uppercase;
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 0;
-            color: $color__text-white;
-            text-align: center;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-        }
-        .entry-content{
-            h2{
-                text-align: center;
-                text-transform: uppercase;
-                font-size: 2em;
-            }
-        }
-    }
-}
-
-body:not(.home):not(.page-template-page-template-about):not(.single-adventure):not(.archive) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-////error404
-
-.error404{
-    ul{
-        padding-left: 0;
-        li{
-            list-style: none;
-            
         }
     }
 }
