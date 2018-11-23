@@ -1555,6 +1555,7 @@ body:not(.home):not(.page-template-page-template-about):not(.single-adventure):n
             .post-type-archive-adventure .site-content .adventure-grid .adventure-grid-item .story-info h2 a:hover {
               color: #f0e4d1; }
 
+/* Adventure single*/
 .single-adventure .site-content {
   padding-top: 0px; }
 
