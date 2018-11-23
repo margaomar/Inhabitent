@@ -68,7 +68,7 @@ Wordpress | PHP | WP Plugings | JQuery | HTML5 | CSS3 | Gulp | Sass (CSS Preproc
 
 >Single adventures page
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-single-adventure.png" width="550px" />
-
+</div>
 
 ----
 ## Dead Line for the project
