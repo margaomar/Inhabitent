@@ -41,15 +41,15 @@ Wordpress | PHP | WP Plugings | JQuery | HTML5 | CSS3 | Gulp | Sass (CSS Preproc
 
 **Desktop Device**
 ----
-<img src="images/screenshoots/inhabitent-home.png" width="550px" />
-<img src="images/screenshoots/inhabitent-shop.png" width="550px" />
-<img src="images/screenshoots/inhabitent-single-product.png" width="550px" />
-<img src="images/screenshoots/inhabitent-journal.png" width="550px" />
-<img src="images/screenshoots/inhabitent-single-post.png" width="550px" />
-<img src="images/screenshoots/inhabitent-about.png" width="550px" />
-<img src="images/screenshoots/inhabitent-find-us.png" width="550px" />
-<img src="images/screenshoots/inhabitent-adventures.png" width="550px" />
-<img src="images/screenshoots/inhabitent-single-adventure.png" width="550px" />
+<img src="./themes/inhabitent/images/screenshoots/inhabitent-home.png" width="550px" />
+<img src="./themes/inhabitent/images/screenshoots/inhabitent-shop.png" width="550px" />
+<img src="./themes/inhabitent/images/screenshoots/inhabitent-single-product.png" width="550px" />
+<img src="./themes/inhabitent/images/screenshoots/inhabitent-journal.png" width="550px" />
+<img src="./themes/inhabitent/images/screenshoots/inhabitent-single-post.png" width="550px" />
+<img src="./themes/inhabitent/images/screenshoots/inhabitent-about.png" width="550px" />
+<img src="./themes/inhabitent/images/screenshoots/inhabitent-find-us.png" width="550px" />
+<img src="./themes/inhabitent/images/screenshoots/inhabitent-adventures.png" width="550px" />
+<img src="./themes/inhabitent/images/screenshoots/inhabitent-single-adventure.png" width="550px" />
 
 
 ----
