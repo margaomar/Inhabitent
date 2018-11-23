@@ -38,17 +38,35 @@ Wordpress | PHP | WP Plugings | JQuery | HTML5 | CSS3 | Gulp | Sass (CSS Preproc
 
 ----
 ## Device Screenshots
-
-**Desktop Device**
 ----
+
+<div style="backgroud-color: #f9f9f9; margin: 0 auto; padding: 3em;">
+>Home page
+
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-home.png" width="550px" />
+
+>Shop page
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-shop.png" width="550px" />
+
+>Single product page
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-single-product.png" width="550px" />
+
+>Blog page
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-journal.png" width="550px" />
+
+>Single post page
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-single-post.png" width="550px" />
+
+>About page
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-about.png" width="550px" />
+
+>Find us page
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-find-us.png" width="550px" />
+
+>Adventures page
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-adventures.png" width="550px" />
+
+>Single adventures page
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-single-adventure.png" width="550px" />
 
 
