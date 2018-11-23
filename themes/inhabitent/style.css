@@ -509,6 +509,7 @@ header.site-header .main-navigation ul.menu li .icon-search {
 --------------------------------------------------------------*/
 /* Links */
 /* Menus */
+/* menu reverse => green/white */
 header.site-header, .home.page-template-default.reverse .site-header, .page-template-page-template-about.page.reverse .site-header, .single-adventure.single.reverse .site-header {
   position: fixed;
   left: 50%;
@@ -585,11 +586,13 @@ header.site-header, .home.page-template-default.reverse .site-header, .page-temp
         display: block;
         text-decoration: none; }
 
+/* text input for search placeholder */
 .error404 header.site-header .menu-main-container ul li.search-menu input.search-field, .search header.site-header .menu-main-container ul li.search-menu input.search-field, .tag header.site-header .menu-main-container ul li.search-menu input.search-field {
   text-transform: uppercase; }
   .error404 header.site-header .menu-main-container ul li.search-menu input.search-field::-webkit-input-placeholder, .search header.site-header .menu-main-container ul li.search-menu input.search-field::-webkit-input-placeholder, .tag header.site-header .menu-main-container ul li.search-menu input.search-field::-webkit-input-placeholder {
     color: #666666; }
 
+/* menu white */
 .home.page-template-default header.site-header, .page-template-page-template-about.page header.site-header, .single-adventure.single header.site-header {
   position: absolute;
   border-bottom: none;
@@ -607,6 +610,7 @@ header.site-header, .home.page-template-default.reverse .site-header, .page-temp
     color: #fff;
     text-shadow: 1px 1px 2px #323232; }
 
+/* pre-menu white */
 .home.page-template-default .site-header .main-navigation ul.menu li .search-form i, .page-template-page-template-about.page .site-header .main-navigation ul.menu li .search-form i, .single-adventure.single .site-header .main-navigation ul.menu li .search-form i {
   color: #fff;
   text-shadow: 1px 1px 2px #323232; }
@@ -616,6 +620,7 @@ header.site-header, .home.page-template-default.reverse .site-header, .page-temp
   .home.page-template-default .site-header .main-navigation ul.menu li .search-field::-webkit-input-placeholder, .page-template-page-template-about.page .site-header .main-navigation ul.menu li .search-field::-webkit-input-placeholder, .single-adventure.single .site-header .main-navigation ul.menu li .search-field::-webkit-input-placeholder {
     color: #fff; }
 
+/* Footer */
 body footer.site-footer {
   background: url(../../images/dark-wood@2x.png);
   background-size: 512px 512px;

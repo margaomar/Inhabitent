@@ -32,7 +32,7 @@ Wordpress | PHP | WP Plugings | JQuery | HTML5 | CSS3 | Gulp | Sass (CSS Preproc
 * **[Inhabitent Wordpress Site on Github](https://github.com/margaomar/Inhabitent)**
 
 ----
-## Media Query Break Point 
+## Media Query Break Point (only desktop view for this project)
 
 * 1200px
 
@@ -41,8 +41,15 @@ Wordpress | PHP | WP Plugings | JQuery | HTML5 | CSS3 | Gulp | Sass (CSS Preproc
 
 **Desktop Device**
 ----
-<img src="screenshoots/desktop-closed-1200px.png" width="1200px" />
-<img src="screenshoots/desktop-open-1200px.png" width="1200px" />
+<img src="images/screenshoots/inhabitent-home.png" width="550px" />
+<img src="images/screenshoots/inhabitent-shop.png" width="550px" />
+<img src="images/screenshoots/inhabitent-single-product.png" width="550px" />
+<img src="images/screenshoots/inhabitent-journal.png" width="550px" />
+<img src="images/screenshoots/inhabitent-single-post.png" width="550px" />
+<img src="images/screenshoots/inhabitent-about.png" width="550px" />
+<img src="images/screenshoots/inhabitent-find-us.png" width="550px" />
+<img src="images/screenshoots/inhabitent-adventures.png" width="550px" />
+<img src="images/screenshoots/inhabitent-single-adventure.png" width="550px" />
 
 
 ----

@@ -4,30 +4,11 @@
 
 /* Links */
 
-// a {
-// 	color: $color__link;
 
-// 	&:visited {
-// 		color: $color__link-visited;
-// 	}
-// 	&:hover,
-// 	&:focus,
-// 	&:active {
-// 		color: $color__link-hover;
-// 	}
-// 	&:focus {
-// 		outline: thin dotted;
-// 	}
-// 	&:hover,
-// 	&:active {
-// 		outline: 0;
-// 	}
-// }
 
 /* Menus */
 
-
-///menu reverse => green/white
+/* menu reverse => green/white */
 header.site-header, .home.page-template-default.reverse .site-header, .page-template-page-template-about.page.reverse .site-header, .single-adventure.single.reverse .site-header {
 	position: fixed;
 	left: 50%;
@@ -112,7 +93,8 @@ header.site-header, .home.page-template-default.reverse .site-header, .page-temp
 		}
 	}
 }
-//text input for search placeholder
+
+/* text input for search placeholder */
 .error404 header.site-header, .search header.site-header, .tag header.site-header{
 	.menu-main-container{
 		ul{
@@ -127,7 +109,8 @@ header.site-header, .home.page-template-default.reverse .site-header, .page-temp
 		}
 	}
 }
-///menu white
+
+/* menu white */
 .home.page-template-default, .page-template-page-template-about.page, .single-adventure.single {
 	header.site-header{
 		position: absolute;
@@ -149,15 +132,11 @@ header.site-header, .home.page-template-default.reverse .site-header, .page-temp
 			color: $color__text-white;
 			text-shadow: 1px 1px 2px #323232;
 			}
-			// input.search-field{
-			// 	color: #fff;
-			// 	text-transform: uppercase;
-			// }
 		}
-		
 	}
 }
-///pre-menu white
+
+/* pre-menu white */
 .home.page-template-default .site-header, .page-template-page-template-about.page .site-header, .single-adventure.single .site-header{
 	.main-navigation ul.menu li {
 		.search-form i{
@@ -173,7 +152,7 @@ header.site-header, .home.page-template-default.reverse .site-header, .page-temp
 	}
 }
 
-//////Footer//////
+/* Footer */
 body footer.site-footer {
 	background: url(../../images/dark-wood@2x.png);
 	background-size: 512px 512px;
