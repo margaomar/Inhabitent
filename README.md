@@ -40,9 +40,8 @@ Wordpress | PHP | WP Plugings | JQuery | HTML5 | CSS3 | Gulp | Sass (CSS Preproc
 ## Device Screenshots
 ----
 
-<div style="backgroud-color: #f9f9f9; margin: 0 auto; padding: 3em;">
 ----
-----
+
 
 >Home page
 ----
@@ -88,7 +87,7 @@ Wordpress | PHP | WP Plugings | JQuery | HTML5 | CSS3 | Gulp | Sass (CSS Preproc
 <img src="./themes/inhabitent/images/screenshoots/inhabitent-single-adventure.png" width="550px" />
 
 ----
-</div>
+
 
 ----
 ## Dead Line for the project
